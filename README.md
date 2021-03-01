@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Move.Yourself
 
-## Getting Started
+> “Education is the most powerful weapon which you can use to change the world.” Nelson Mandela
 
-First, run the development server:
+<br />
+<p align="center"><img src=".github/portfolio.gif?raw=true"/></p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# :pushpin: Table of Contents
+* [Made With](#rocket-made-with)
+* [Installation](#construction_worker-installation)
+* [Getting Started](#runner-getting-started)
+* [Found a bug? Missing a specific feature?](#bug-issues)
+* [Contributing](#tada-contributing)
+* [License](#closed_book-license)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# :rocket: Made With
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+* 💠 TypeScript
+* 💫 React
+* ☄️ Next
+* 💅🏻 CSS
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# :construction_worker: Installation
 
-## Learn More
+**You need to install at least [NodeJS 12.18.2](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/en/docs/install/), then in order to clone the project via HTTPS, run this command:**
 
-To learn more about Next.js, take a look at the following resources:
+```git clone https://github.com/marcosvaldeni/portfolio.git```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have an SSH key registered in your Github account, clone the project using this command:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```git clone github.com/marcosvaldeni/portfolio.git```
 
-## Deploy on Vercel
+**Install Dependencies**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In the project directory, you have to run:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`yarn`
+
+This command will install all dependencies. It may take a while.
+
+# :runner: Getting Started
+
+**Starting**
+
+In the project directory, you can run:
+
+`yarn start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+# :bug: Issues
+
+Feel free to **file a new issue** with a respective title and description on the [Portfolio](https://github.com/marcosvaldeni/portfolio/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/marcosvaldeni/portfolio/blob/master/CONTRIBUTING.md) to find out about the coding standards.
+
+# :tada: Contributing
+
+Check out the [contributing](https://github.com/marcosvaldeni/portfolio/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+
+# :closed_book: License
+
+Released in 2021.
+This project is under the [MIT license](https://github.com/marcosvaldeni/portfolio/blob/master/LICENSE).
+
+Made with love by [Marcos Lucas](https://github.com/marcosvaldeni)
