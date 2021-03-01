@@ -26,11 +26,11 @@
 
 **You need to install at least [NodeJS 12.18.2](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/en/docs/install/), then in order to clone the project via HTTPS, run this command:**
 
-```git clone https://github.com/marcosvaldeni/portfolio.git```
+```git clone https://github.com/marcosvaldeni/move-yourself.git```
 
 SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have an SSH key registered in your Github account, clone the project using this command:
 
-```git clone github.com/marcosvaldeni/portfolio.git```
+```git clone github.com/marcosvaldeni/move-yourself.git```
 
 **Install Dependencies**
 
@@ -56,15 +56,15 @@ You will also see any lint errors in the console.
 
 # :bug: Issues
 
-Feel free to **file a new issue** with a respective title and description on the [Portfolio](https://github.com/marcosvaldeni/portfolio/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/marcosvaldeni/portfolio/blob/master/CONTRIBUTING.md) to find out about the coding standards.
+Feel free to **file a new issue** with a respective title and description on the [Move.Yourself](https://github.com/marcosvaldeni/move-yourself/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/marcosvaldeni/move-yourself/blob/master/CONTRIBUTING.md) to find out about the coding standards.
 
 # :tada: Contributing
 
-Check out the [contributing](https://github.com/marcosvaldeni/portfolio/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+Check out the [contributing](https://github.com/marcosvaldeni/move-yourself/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
 # :closed_book: License
 
 Released in 2021.
-This project is under the [MIT license](https://github.com/marcosvaldeni/portfolio/blob/master/LICENSE).
+This project is under the [MIT license](https://github.com/marcosvaldeni/move-yourself/blob/master/LICENSE).
 
-Made with love by [Marcos Lucas](https://github.com/marcosvaldeni)
+Made with love by [Marcos Lucas](https://github.com/marcosvaldeni) 💚🚀
