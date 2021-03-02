@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 
 import challenges from '../../challenges.json';
 import LevelUpModal from '../components/LevelUpModal';
+import InitModal from '../components/InitModal';
 
 interface Challenge {
   type: 'body' | 'eye';
@@ -118,6 +119,7 @@ export function ChallengesProvider({
       }}>
       { children }
       { isLevelUpModalOpen && <LevelUpModal /> }
+      {/* <InitModal /> */}
     </ChallengesContext.Provider>
   );
 }

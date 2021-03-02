@@ -9,10 +9,27 @@
 }
 
 .container section {
+  margin-top: 60px;
+  padding-bottom: 60px;
   flex: 1;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6.25rem;
+  grid-template-columns: 1fr;
+  gap: 4rem;
   align-content: center;
+}
+
+@media (min-width: 768px) {
+
+  .container section {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .container section {
+    gap: 6.25rem;
+  }
 }

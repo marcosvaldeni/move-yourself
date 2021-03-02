@@ -68,8 +68,13 @@
   margin: 1.5rem 0 1rem;
 }
 
+.challengeActive main img {
+  margin: 1rem;
+}
+
 .challengeActive main p {
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .challengeActive footer {
@@ -106,4 +111,15 @@
 
 .challengeActive footer button:hover {
   filter: brightness(0.9);
+}
+
+@media (min-width: 768px) {
+
+  .challengeActive main img {
+    margin: 0;
+  }
+  
+  .challengeActive main p {
+    margin-bottom: 0;
+  }
 }

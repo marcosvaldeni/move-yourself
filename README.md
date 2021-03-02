@@ -8,12 +8,16 @@
 ---
 
 # :pushpin: Table of Contents
+* [Description](#memo-description)
 * [Made With](#rocket-made-with)
 * [Installation](#construction_worker-installation)
 * [Getting Started](#runner-getting-started)
 * [Found a bug? Missing a specific feature?](#bug-issues)
 * [Contributing](#tada-contributing)
 * [License](#closed_book-license)
+
+# :memo: Description
+The application proposes to provide exercises to the user every 25 minutes. The exercises range from stretching and some eye exercises, ideal for programmers or even people who spend a lot of time in front of the computer.
 
 # :rocket: Made With
 
@@ -46,7 +50,7 @@ This command will install all dependencies. It may take a while.
 
 In the project directory, you can run:
 
-`yarn start`
+`yarn dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

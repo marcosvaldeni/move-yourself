@@ -26,6 +26,8 @@ export default function Home(props: HomeProps) {
       <div className={styles.container}>
         <Head>
           <title>Move.Yourself</title>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <ExperienceBar />
 
