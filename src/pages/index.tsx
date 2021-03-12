@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 import ChallengeBox from '../components/ChallengeBox';
@@ -7,8 +9,8 @@ import Countdown from '../components/Countdown';
 import ExperienceBar from '../components/ExperienceBar';
 import Profile from '../components/Profile';
 import { ChallengesProvider,  } from '../contexts/ChallengesContext';
-
 import styles from '../styles/pages/Home.module.css';
+import { ProfileProvider } from '../contexts/ProfileContext';
 
 interface HomeProps {
   level: number;
@@ -26,15 +28,15 @@ export default function Home(props: HomeProps) {
       <div className={styles.container}>
         <Head>
           <title>Move.Yourself</title>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <ExperienceBar />
 
         <CountdownProvider>
           <section>
             <div>
-              <Profile />
+              <ProfileProvider>
+                <Profile />
+              </ProfileProvider>
               <CompletedChallenges />
               <Countdown />
             </div>

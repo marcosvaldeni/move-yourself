@@ -3,7 +3,6 @@ import Cookies from 'js-cookie';
 
 import challenges from '../../challenges.json';
 import LevelUpModal from '../components/LevelUpModal';
-import InitModal from '../components/InitModal';
 
 interface Challenge {
   type: 'body' | 'eye';
@@ -38,8 +37,14 @@ export function ChallengesProvider({
   ...rest
 }: ChallengesProviderProps) {
   const [level, setLevel] = useState(rest.level ?? 1);
-  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
-  const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
+  const [
+    currentExperience, 
+    setCurrentExperience
+  ] = useState(rest.currentExperience ?? 0);
+  const [
+    challengesCompleted, 
+    setChallengesCompleted
+  ] = useState(rest.challengesCompleted ?? 0);
 
   const [activeChallenge, setActiveChallenge] = useState(null);
   const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
@@ -74,8 +79,8 @@ export function ChallengesProvider({
     new Audio('/notification.mp3').play();
 
     if (Notification.permission === 'granted') {
-      new Notification('Novo desafio', {
-        body: `Valendo ${challenge.amount}xp!`
+      new Notification('New challenge', {
+        body: `Worth ${challenge.amount}xp!`
       })
     }
   }
@@ -119,7 +124,6 @@ export function ChallengesProvider({
       }}>
       { children }
       { isLevelUpModalOpen && <LevelUpModal /> }
-      {/* <InitModal /> */}
     </ChallengesContext.Provider>
   );
 }

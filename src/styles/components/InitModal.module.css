@@ -23,13 +23,13 @@
 .login {
   width: 100%;
   max-width: 420px;
-  margin: 0 20px;
+  padding: 0 20px;
 }
 
 .login h1 {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--white);
   margin-bottom: 96px;
 }
@@ -69,11 +69,15 @@
 .form input {
   height: 80px;
   width: 100%;
+  padding: 0 20px;
   flex: 1;
-  color: var(--text-highlight);
+  color: var(--white);
   background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
   border-radius: 5px 0px 0px 5px;
   border: none;
+}
+.form input::placeholder { 
+  color: #B2B9FF;
 }
 
 .form button {
@@ -82,6 +86,11 @@
   background: var(--blue-dark);
   border-radius: 0 5px 5px 0;
   border: none;
+}
+
+.form button svg {
+  color: #fff;
+  font-size: 2rem;
 }
 
 @media (min-width: 992px) {
