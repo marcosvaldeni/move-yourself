@@ -3,6 +3,8 @@ import { ChallengesContext } from '../../contexts/ChallengesContext';
 import { ProfileContext } from '../../contexts/ProfileContext';
 import styles from '../../styles/components/Profile.module.css';
 
+import { FaDoorOpen } from "react-icons/fa";
+
 const Profile: React.FC = () => {
   const { level } = useContext(ChallengesContext);
   const { userData } = useContext(ProfileContext);
@@ -20,6 +22,9 @@ const Profile: React.FC = () => {
           <img src="icons/level.svg" alt="Arrow"/>
           Level {level}
         </p>
+        <span>
+          <FaDoorOpen />
+        </span>
       </div>
     </div>
   );

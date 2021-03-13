@@ -6,6 +6,9 @@ const ExperienceBar: React.FC = () => {
   const { currentExperience, experienceToNextlevel } = useContext(ChallengesContext);
 
   const percentToNextLevel = Math.round((currentExperience * 100) / experienceToNextlevel);
+
+  console.log(percentToNextLevel);
+  
   return (
     <header className={styles.experienceBar}>
       <span>0 xp</span>

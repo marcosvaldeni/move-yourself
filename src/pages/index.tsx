@@ -13,6 +13,9 @@ import styles from '../styles/pages/Home.module.css';
 import { ProfileProvider } from '../contexts/ProfileContext';
 
 interface HomeProps {
+  username: string;
+  avatar_url: string;
+  isLogged: boolean;
   level: number;
   currentExperience: number;
   challengesCompleted: number;
@@ -34,7 +37,7 @@ export default function Home(props: HomeProps) {
         <CountdownProvider>
           <section>
             <div>
-              <ProfileProvider>
+              <ProfileProvider username={props.username} avatar_url={props.avatar_url} isLogged={props.isLogged}>
                 <Profile />
               </ProfileProvider>
               <CompletedChallenges />
@@ -51,10 +54,13 @@ export default function Home(props: HomeProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
+  const { username, avatar_url, isLogged, level, currentExperience, challengesCompleted } = ctx.req.cookies;
 
   return {
     props: {
+      username: String(username),
+      avatar_url: String(avatar_url),
+      isLogged: Boolean(isLogged),
       level: Number(level),
       currentExperience: Number(currentExperience),
       challengesCompleted: Number(challengesCompleted)
